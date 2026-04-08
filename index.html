@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Western Peaks Tours | Complete Rwanda Travel - Gorillas, Volcanoes, Safari, Lakes & More</title>
+    <meta name="description" content="Experience the best of Rwanda: Gorilla Trekking, Chimpanzee Tracking, Big 5 Safari, Volcano Hiking, Lake Kivu, Nyungwe Canopy Walk, Cultural Tours, and Luxury Hotels. Book your complete Rwanda adventure!">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #00A651;
+            --primary-dark: #008F44;
+            --primary-light: #E8F5E9;
+            --secondary: #00A3D9;
+            --secondary-dark: #0088C7;
+            --accent: #FCD116;
+            --accent-dark: #E6B800;
+            --dark: #1a1a2e;
+            --dark-light: #16213e;
+            --gray: #6c757d;
+            --gray-light: #f8f9fa;
+            --white: #ffffff;
+            --shadow: 0 5px 30px rgba(0,0,0,0.1);
+            --shadow-hover: 0 10px 40px rgba(0,0,0,0.15);
+            --radius: 12px;
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var();
+            background: var();
+            color: var();
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            font-size: 35px;
+        }
+        
+        .logo-text h1 {
+            font-size: 20px;
+            color: var(--primary);
+            margin: 0;
+        }
+        
+        .logo-text p {
+            font-size: 10px;
+            color: var(--gray);
+            margin: 0;
+        }
+        
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: var(--transition);
+            font-size: 14px;
+        }
+        
+        .nav-menu a:hover {
+            color: var(--secondary);
+        }
+        
+        .btn-book-nav {
+            background: var(--primary);
+            color: var(--white) !important;
+            padding: 16px 20px;
+            border-radius: 50px;
+        }
+        
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url('lake1.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+            margin-top: 70px;
+        }
+        
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+        
+        .hero-title {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-text {
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: var(secondary);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+            color: var(--dark);
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-light {
+            background: var(--gray-light);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: var(--gray);
+            margin-bottom: 50px;
+        }
+        
+        /* Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .stat-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: var(--radius);
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        
+        .stat-number {
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+        
+        /* Destination Grid */
+        .destinations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .destination-card {
+            position: relative;
+            border-radius: var(--white);
+            overflow: hidden;
+            height: 300px;
+            cursor: pointer;
+        }
+        
+        .destination-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .destination-card:hover img {
+            transform: scale(1.1);
+        }
+        
+        .destination-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 20px;
+            color: var(--white);
+        }
+        
+        /* Tours Grid */
+        .tours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .tour-card {
+            background: var( --white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .tour-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+        
+        .tour-image {
+            height: 220px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .tour-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--white);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .tour-price {
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            background: var(section-light);
+            padding: 8px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            color: var(--secondary-dark);
+        }
+        
+        .tour-content {
+            padding: 20px;
+        }
+        
+        .tour-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            font-size: 13px;
+            color: var(--gray);
+        }
+        
+        /* Activities Grid */
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+        
+        .activity-card {
+            text-align: center;
+            padding: 30px;
+            background: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .activity-icon {
+            font-size: 50px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        /* Itinerary */
+        .itinerary {
+            background: var(--b);column-rule-color:;
+            border-radius: var(--radius);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        
+        .itinerary-day {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .day-number {
+            width: 50px;
+            height: 50px;
+            background: var();
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 20px;
+        }
+        
+        /* Gallery */
+        .gallery-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .gallery-tab {
+            padding: 10px 25px;
+            background: var(--gray-light);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        
+        .gallery-tab.active {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            cursor: pointer;
+            height: 250px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.7));
+            padding: 20px;
+            color: var(--white);
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background: var( --radius);
+            padding: 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .testimonial-stars {
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        
+        /* Contact & Payment */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            background: var(--primary-light);
+            padding: 30px;
+            border-radius: var(--radius);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .contact-item i {
+            width: 45px;
+            height: 45px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 10px solid #ddd;
+            border-radius: 10px;
+        }
+        
+        .payment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .payment-card {
+            background: var( );
+            padding: 20px;
+            border-radius: var(--radius);
+            text-align: center;
+        }
+        
+        .payment-icon {
+            font-size: 40px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: var( --radius);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background: var(--primary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 30px;
+            z-index: 999;
+            transition: var(--transition);
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 2000;
+            cursor: pointer;
+        }
+        
+        .modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .stats-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--white);
+                flex-direction: column;
+                padding: 30px;
+                transition: var(--transition);
+            }
+            .nav-menu.active {
+                left: 0;
+            }
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hero-title {
+                font-size: 32px;
+            }
+            .section-title {
+                font-size: 28px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <span class="logo">WELCOME </span>
+                    <div class="logo-text">
+                        <h1>WESTERN PEAKS TOUR </h1>
+                        <p>RWANDA TOURS & TRAVEL</p>
+                    </div>
+                </a>
+                <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home">Home</a>
+                    <a href="#destinations">Destinations</a>
+                    <a href="#tours">Tours</a>
+                    <a href="#activities">Activities</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#testimonials">Reviews</a>
+                    <a href="#contact" class="btn-book-nav">Book Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Explore Rwanda<br>with westren peak tour</h1>
+            <p class="hero-text">Gorilla Trekking • Big 5 Safari    • Volcano Hiking  <br>• Chimpanzee Tracking • Canopy Walk • Lake Kivu • Cultural Experiences</p>
+            <div>
+                <a href="#tours" class="btn btn-primary">Explore Tours</a>
+                <a href="#contact" class="btn btn-outline">Plan Your Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card"><div class="stat-number">3+</div><div>Years Experience</div></div>
+            <div class="stat-card"><div class="stat-number">1000+</div><div>Happy Travelers</div></div>
+            <div class="stat-card"><div class="stat-number">10+</div><div>National Parks</div></div>
+            <div class="stat-card"><div class="stat-number">25+</div><div>Hotel Partners</div></div>
+            <div class="stat-card"><div class="stat-number">24/7</div><div>Support</div></div>
+        </div>
+    </div>
+
+    <!-- Why Rwanda -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Why Visit Rwanda?</h2>
+            <p class="section-subtitle">The Land of a Thousand Hills offers unforgettable experiences</p>
+            <div class="stats-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <div class="stat-card"><i class="fas fa-shield-alt" style="font-size: 30px; color: var(--primary);"></i><h3>Safest Country</h3><p>in Africa</p></div>
+                <div class="stat-card"><i class="fas fa-leaf" style="font-size: 30px; color: var(--primary);"></i><h3>Cleanest City</h3><p>Kigali, Africa's cleanest</p></div>
+                <div class="stat-card"><i class="fas fa-smile" style="font-size: 30px; color: var(--primary);"></i><h3>Friendly People</h3><p>Warm hospitality</p></div>
+                <div class="stat-card"><i class="fas fa-passport" style="font-size: 30px; color: var(--primary);"></i><h3>Easy Visa</h3><p>Visa on arrival</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations -->
+    <section id="destinations" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Top Destinations in Rwanda</h2>
+            <p class="section-subtitle">Explore the most beautiful places in the Land of a Thousand Hills</p>
+            <div class="destinations-grid">
+                <div class="destination-card"><img src="animal2.jpeg"alt="Volcanoes NP"><div class="destination-overlay"><h3>🌋 Volcanoes National Park</h3><p>Mountain Gorillas & Golden Monkeys</p></div></div>
+                <div class="destination-card"><img src="animal1.jpeg" alt="Nyungwe"><div class="destination-overlay"><h3>🌳 Nyungwe Forest</h3><p>Chimpanzees & Canopy Walk</p></div></div>
+                <div class="destination-card"><img src="lake1.jpg" alt="Lake Kivu"><div class="destination-overlay"><h3>🌊 Lake Kivu</h3><p>Beaches & Island Hopping</p></div></div>
+                <div class="destination-card"><img src="akagera2.jpg" alt="Akagera"><div class="destination-overlay"><h3>🦁 Akagera National Park</h3><p>Big 5 Safari Experience</p></div></div>
+                <div class="destination-card"><img src="kigali1.jpg" alt="Kigali"><div class="destination-overlay"><h3>🏙️ Kigali City</h3><p>Modern Capital & Culture</p></div></div>
+                <div class="destination-card"><img src="gisenyi.png" alt="Rubavu">
+                    <div class="destination-overlay"><h3>🏖️ Rubavu (Gisenyi)</h3><p>Lakefront Resort Town</p></div></div><div class="destination-card"><img src="NENGO1.jpg" alt="Rubavu"><div class="destination-overlay"><h3>🏖️ Rubavu (Gisenyi)</h3><p>NEGO HIKING</p></div></div><div class="destination-overlay"><h3>🏖️ Rubavu (Gisenyi)</h3><p>Lakefront Resort Town</p></div></div>
+        </div>
+    </section>
+
+    <!-- Complete Tours List -->
+    <section id="tours" class="section">
+        <div class="container">
+            <h2 class="section-title">Complete Tour Packages</h2>
+            <p class="section-subtitle">Everything you need for an unforgettable Rwandan adventure</p>
+            <div class="tours-grid">
+                <div class="tour-card"><div class="tour-image" style="background-image: url('AKAGERA2.JPG');"><span class="tour-badge">⭐ BEST SELLER</span><div class="tour-price">$</div></div><div class="tour-content"><div class="tour-meta"><span><i class="fas fa-clock"></i> 1 Day</span><span><i class="fas fa-users"></i> 8 People</span></div><h3>🦍 Gorilla Trekking</h3><p>Face-to-face with mountain gorillas in Volcanoes National Park. Includes permit, guide, transport.</p><button class="btn btn-primary btn-block book-now" data-tour="Gorilla Trekking" data-price="1500">Book Now</button></div></div>
+                <div class="tour-card"><div class="tour-image" style="background-image: url('HIKING1.JPEG');"><span class="tour-badge">🏔️ ADVENTURE</span><div class="tour-price">$</div></div><div class="tour-content"><div class="tour-meta"><span><i class="fas fa-clock"></i> 2 Days</span><span><i class="fas fa-users"></i> 12 People</span></div><h3>⛰️ Volcano Hiking</h3><p>Summit Mount Bisoke or Karisimbi. Camping equipment, guide, park fees included.</p><button class="btn btn-primary btn-block book-now" data-tour="Volcano Hiking" data-price="800">Book Now</button></div></div>
+                <div class="tour-card"><div class="tour-image" style="background-image: url('TRIP1.JPEG');"><span class="tour-badge">🐒 WILDLIFE</span><div class="tour-price">$</div></div><div class="tour-content"><div class="tour-meta"><span><i class="fas fa-clock"></i> 1 Day</span><span><i class="fas fa-users"></i> 10 People</span></div><h3>🐵 Chimpanzee Tracking</h3><p>Track chimpanzees in Nyungwe Forest. Includes permit, guide, and canopy walk.</p><button class="btn btn-primary btn-block book-now" data-tour="Chimpanzee Tracking" data-price="950">Book Now</button></div></div>
+                <div class="tour-card"><div class="tour-image" style="background-image: url('AKAGERA5.JPEG');"><span class="tour-badge">🦁 SAFARI</span><div class="tour-price">$</div></div><div class="tour-content"><div class="tour-meta"><span><i class="fas fa-clock"></i> 2 Days</span><span><i class="fas fa-users"></i> 10 People</span></div><h3>🦒 Akagera Big 5 Safari</h3><p>See lions, elephants, giraffes, zebras, hippos. Game drives and boat safari.</p><button class="btn btn-primary btn-block book-now" data-tour="Akagera Safari" data-price="650">Book Now</button></div></div>
+                <div class="tour-card"><div class="tour-image" style="background-image: url('LAKE1.JPG');"><span class="tour-badge">🌊 RELAXING</span><div class="tour-price">$</div></div><div class="tour-content"><div class="tour-meta"><span><i class="fas fa-clock"></i> 2 Days</span><span><i class="fas fa-users"></i> Flexible</span></div><h3>🏖️ Lake Kivu Escape</h3><p>Boat cruise, island hopping, beach relaxation. Accommodation and meals included.</p><button class="btn btn-primary btn-block book-now" data-tour="Lake Kivu Tour" data-price="250">Book Now</button></div></div>
+                <div class="tour-card"><div class="tour-image" style="background-image: url('UMUCO1.JPEG');"><span class="tour-badge">🎭 CULTURE</span><div class="tour-price">$150</div></div><div class="tour-content"><div class="tour-meta"><span><i class="fas fa-clock"></i> 1 Day</span><span><i class="fas fa-users"></i> 15 People</span></div><h3>🎨 Cultural Village Tour</h3><p>Traditional dancing, drumming, local food, and village life experience.</p><button class="btn btn-primary btn-block book-now" data-tour="Cultural Tour" data-price="150">Book Now</button></div></div>
+                <div class="tour-card"><div class="tour-image" style="background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80');"><span class="tour-badge">🌿 NATURE</span><div class="tour-price">$180</div></div><div class="tour-content"><div class="tour-meta"><span><i class="fas fa-clock"></i> 1 Day</span><span><i class="fas fa-users"></i> 12 People</span></div><h3>🌉 Nyungwe Canopy Walk</h3><p>Walk 70m above the forest on Africa's only canopy walkway. Stunning views!</p><button class="btn btn-primary btn-block book-now" data-tour="Canopy Walk" data-price="180">Book Now</button></div></div>
+                <div class="tour-card"><div class="tour-image" style="background-image: url('KIGALI1.JPG');"><span class="tour-badge">🚗 COMFORT</span><div class="tour-price">$500</div></div><div class="tour-content"><div class="tour-meta"><span><i class="fas fa-clock"></i> 3 Days</span><span><i class="fas fa-users"></i> 6 People</span></div><h3>🏨 Kigali City Tour + Hotels</h3><p>Explore the capital, genocide memorial, local markets, and luxury accommodations.</p><button class="btn btn-primary btn-block book-now" data-tour="Kigali City Tour" data-price="">Book Now</button></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities -->
+    <section id="activities" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Amazing Activities</h2>
+            <p class="section-subtitle">Things to do in Rwanda</p>
+            <div class="activities-grid">
+                <div class="activity-card"><div class="activity-img">🦍</div><h3>Gorilla Trekking</h3><p>Meet mountain gorillas</p></div>
+                <div class="activity-card"><div class="activity-icon">⛰️</div><h3>Volcano Hiking</h3><p>Climb Virunga peaks</p></div>
+                <div class="activity-card"><div class="activity-icon">🐒</div><h3>Chimpanzee Tracking</h3><p>Nyungwe Forest</p></div>
+                <div class="activity-card"><div class="activity-icon">🦁</div><h3>Big 5 Safari</h3><p>Akagera Park</p></div>
+                <div class="activity-card"><div class="activity-icon">🌉</div><h3>Canopy Walk</h3><p>70m above forest</p></div>
+                <div class="activity-card"><div class="activity-icon">🚣</div><h3>Boat Cruise</h3><p>Lake Kivu</p></div>
+                <div class="activity-card"><div class="activity-icon">🚲</div><h3>Cycling Tour</h3><p>Congo Nile Trail</p></div>
+                <div class="activity-card"><div class="activity-icon">🎭</div><h3>Cultural Dance</h3><p>Traditional Intore</p></div>
+                <div class="activity-card"><div class="activity-icon">🛍️</div><h3>Market Tour</h3><p>Local crafts</p></div>
+                <div class="activity-card"><div class="activity-icon">☕</div><h3>Coffee Tour</h3><p>Rwandan coffee</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Itinerary -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Sample 7-Day Rwanda Itinerary</h2>
+            <p class="section-subtitle">The perfect Rwanda adventure</p>
+            <div class="itinerary">
+                <div class="itinerary-day"><div class="day-number">1</div><div><h3>Arrival in Kigali</h3><p>Airport pickup, city tour, genocide memorial, dinner at local restaurant</p></div></div>
+                <div class="itinerary-day"><div class="day-number">2</div><div><h3>Transfer to Volcanoes NP</h3><p>Scenic drive, Iby'Iwacu cultural village, prepare for gorilla trekking</p></div></div>
+                <div class="itinerary-day"><div class="day-number">3</div><div><h3>Gorilla Trekking Day</h3><p>Track mountain gorillas, spend 1 hour with them, return to lodge</p></div></div>
+                <div class="itinerary-day"><div class="day-number">4</div><div><h3>Golden Monkeys & Hike</h3><p>Track golden monkeys or hike Mount Bisoke crater lake</p></div></div>
+                <div class="itinerary-day"><div class="day-number">5</div><div><h3>Lake Kivu Relaxation</h3><p>Transfer to Lake Kivu, boat cruise, beach relaxation, island hopping</p></div></div>
+                <div class="itinerary-day"><div class="day-number">6</div><div><h3>Nyungwe Forest</h3><p>Canopy walkway, chimpanzee tracking, tea plantation visit</p></div></div>
+                <div class="itinerary-day"><div class="day-number">7</div><div><h3>Departure</h3><p>Return to Kigali, souvenir shopping, airport transfer</p></div></div>
+            </div>
+            <div class="text-center" style="text-align: center; margin-top: 30px;"><a href="#contact" class="btn btn-primary">Customize Your Itinerary</a></div>
+        </div>
+    </section>
+
+    <section class="hero-gallery" id="home">
+    <div class="container">
+        <div class="brand-badge">
+        </div>
+        <h1>Community Photo Gallery</h1>
+        <p style="max-width:800px; margin:1rem auto 0; background-size: 60px;">Real moments from gorilla treks, Lake Kivu sunsets, and magical safaris — uploaded by travelers like you.</p>
+    </div>
+</section>
+
+<div class="container" id="upload">
+    <!-- Upload Section -->
+    <div class="upload-card">
+        <h3 style="display: flex; gap:0.5rem; align-items:center;"><i class="fas fa-camera-retro" style="color: var(--primary);"></i> Share your Rwanda story</h3>
+        <p style="margin-bottom: 1rem; color: var(--stone);">Upload a photo from your trip (gorilla trekking, safari, hotels, local food, or landscape)</p>
+        <div class="upload-area" id="dropZone">
+            <i class="fas fa-cloud-upload-alt upload-icon"></i>
+            <p><strong>Click or drag & drop</strong> an image (JPG, PNG, WEBP)</p>
+            <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp">
+        </div>
+        <div class="image-preview" id="previewContainer"></div>
+        
+        <div class="upload-form-row">
+            <div class="input-group">
+                <label><i class="fas fa-tag"></i> Caption / moment</label>
+                <input type="text" id="photoCaption" placeholder="e.g., 'Morning with mountain gorillas'">
+            </div>
+            <div class="input-group">
+                <label><i class="fas fa-map-marker-alt"></i> Location</label>
+                <input type="text" id="photoLocation" placeholder="Volcanoes NP / Lake Kivu / Akagera">
+            </div>
+            <div class="input-group">
+                <label><i class="fas fa-user"></i> Your name</label>
+                <input type="text" id="photoAuthor" placeholder="Traveler name">
+            </div>
+            <button class="btn-primary" id="publishBtn"><i class="fab fa-whatsapp"></i> Publish to gallery</button>
+        </div>
+        <p class="note" style="font-size: 0.7rem; margin-top: 1rem; color: var(--stone);"><i class="fas fa-shield-alt"></i> By sharing you inspire other adventurers. Images are stored locally in your browser (demo gallery).</p>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="gallery-section">
+        <div class="gallery-header">
+            <h2><i class="fas fa-images" style="color: var(--primary);"></i> Traveler Gallery</h2>
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All moments</button>
+                <button class="filter-btn" data-filter="gorilla">🦍 Gorilla</button>
+                <button class="filter-btn" data-filter="safari">🦁 Safari</button>
+                <button class="filter-btn" data-filter="nature">🌿 Nature</button>
+                <button class="filter-btn" data-filter="culture">🎭 Culture</button>
+            </div>
+        </div>
+        <div id="galleryGrid" class="gallery-masonry">
+            <!-- Default sample images with Western Peaks vibe -->
+            <div class="gallery-item-card" data-category="gorilla"><img class="card-img" src="https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gorilla trekking"><div class="card-info"><div class="card-caption"><span>🐾 Gentle giant encounter</span><span class="delete-badge" data-id="sample1"><i class="fas fa-trash-alt"></i></span></div><div class="card-location"><i class="fas fa-map-pin"></i> Volcanoes NP</div><div style="font-size:0.7rem; margin-top:4px;">by Sarah J.</div></div></div>
+            <div class="gallery-item-card" data-category="safari"><img class="card-img" src="https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Elephant Akagera"><div class="card-info"><div class="card-caption"><span>🐘 Majestic elephant herd</span><span class="delete-badge" data-id="sample2"><i class="fas fa-trash-alt"></i></span></div><div class="card-location"><i class="fas fa-map-pin"></i> Akagera NP</div><div>by Michael</div></div></div>
+            <div class="gallery-item-card" data-category="nature"><img class="card-img" src="https://images.unsplash.com/photo-1573843989-c9d7ad0f6a9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lake Kivu"><div class="card-info"><div class="card-caption"><span>🌅 Sunset on Lake Kivu</span><span class="delete-badge" data-id="sample3"><i class="fas fa-trash-alt"></i></span></div><div class="card-location"><i class="fas fa-map-pin"></i> Rubavu</div><div>by Emma & David</div></div></div>
+            <div class="gallery-item-card" data-category="culture"><img class="card-img" src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cultural dance"><div class="card-info"><div class="card-caption"><span>🥁 Intore dancers</span><span class="delete-badge" data-id="sample4"><i class="fas fa-trash-alt"></i></span></div><div class="card-location"><i class="fas fa-map-pin"></i> Iby'Iwacu Village</div><div>by Amina</div></div></div>
+            <div class="gallery-item-card" data-category="gorilla"><img class="card-img" src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chimpanzee"><div class="card-info"><div class="card-caption"><span>🐒 Chimpanzee tracking</span><span class="delete-badge" data-id="sample5"><i class="fas fa-trash-alt"></i></span></div><div class="card-location"><i class="fas fa-map-pin"></i> Nyungwe Forest</div><div>by Carlos M.</div></div></div>
+        </div>
+    </div>
+</div>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0F6B3A;
+            --primary-dark: #0A4F2A;
+            --primary-soft: #E9F5EF;
+            --accent: #F5A623;
+            --dark: #1E2A32;
+            --stone: #4A5B6E;
+            --mist: #F8FAFC;
+            --white: #ffffff;
+            --shadow-sm: 0 8px 20px rgba(0,0,0,0.05);
+            --shadow-md: 0 12px 28px rgba(0,0,0,0.08);
+            --radius-xl: 1.75rem;
+            --radius-lg: 1.25rem;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--mist);
+            color: var(--dark);
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header & Navigation (consistent with brand) */
+        .header {
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(4px);
+            background: rgba(255,255,255,0.96);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.9rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+        }
+
+        .logo-text h1 {
+            font-size: 1.3rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            color: var(--primary);
+            line-height: 1.2;
+        }
+
+        .logo-text p {
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--stone);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--dark);
+            transition: 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .btn-outline-nav {
+            background: transparent;
+            border: 1.5px solid var(--primary);
+            padding: 0.4rem 1.2rem;
+            border-radius: 2rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .btn-outline-nav:hover {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Hero section with logo hint */
+        .hero-gallery {
+            background: linear-gradient(115deg, #0F6B3A10 0%, #F5A62310 100%), url('umuco3.jpeg');
+            background-size: cover;
+            background-position: center 80%;
+            padding: 3rem 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero-gallery h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #0F6B3A, #F5A623);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .brand-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(8px);
+            padding: 0.5rem 1.2rem;
+            border-radius: 3rem;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        /* Upload Section */
+        .upload-card {
+            background: var(--dark-light);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            margin-bottom: 3rem;
+            border: 1px solid rgba(15,107,58,0.2);
+            transition: all 0.2s;
+        }
+
+        .upload-area {
+            border: 2px dashed #cbd5e1;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.2s;
+            background: var(--primary-soft);
+        }
+
+        .upload-area:hover {
+            border-color: var(--primary);
+            background: #f0f9f4;
+        }
+
+        .upload-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        #fileInput {
+            display: none;
+        }
+
+        .image-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            align-items: center;
+        }
+
+        .preview-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 1rem;
+            box-shadow: var(--shadow-sm);
+            border: 2px solid white;
+        }
+
+        .upload-form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            align-items: flex-end;
+        }
+
+        .input-group {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        .input-group label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 0.7rem 1rem;
+            border-radius: 2rem;
+            border: 1px solid #e2e8f0;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            border: none;
+            padding: 0.7rem 1.8rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        /* Gallery Grid */
+        .gallery-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .filter-tabs {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--white);
+            border: none;
+            padding: 0.5rem 1.2rem;
+            border-radius: 2rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .gallery-masonry {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.8rem;
+        }
+
+        .gallery-item-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.25s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .gallery-item-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            background: #eef2f5;
+            display: block;
+        }
+
+        .card-info {
+            padding: 1rem;
+        }
+
+        .card-caption {
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-location {
+            font-size: 0.7rem;
+            color: var(--stone);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin-top: 0.3rem;
+        }
+
+        .delete-badge {
+            background: rgba(0,0,0,0.6);
+            color: white;
+            border-radius: 2rem;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.7rem;
+            opacity: 0;
+            transition: 0.2s;
+        }
+
+        .gallery-item-card:hover .delete-badge {
+            opacity: 1;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            background: var(--white);
+            border-radius: 2rem;
+            color: var(--stone);
+        }
+
+        /* Modal lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-img {
+            max-width: 85%;
+            max-height: 85%;
+            border-radius: 1rem;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: #eef2f5;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 720px) {
+            .gallery-masonry { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));}
+            .hero-gallery h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="navbar">  
+                   
+            </a>       
+        </nav>
+    </div>
+</header>
+
+<div id="lightboxModal" class="lightbox">
+    <img class="lightbox-img" id="lightboxImage" src="">
+</div>
+
+<script>
+    (function() {
+        // ---------- Gallery storage (localStorage) ----------
+        let galleryItems = [];
+
+        // load from localStorage or initialize with default samples
+        function loadGalleryFromStorage() {
+            const stored = localStorage.getItem('westernPeaksGallery');
+            if(stored) {
+                galleryItems = JSON.parse(stored);
+            } else {
+                // default samples (id, imgUrl, caption, location, author, category, date)
+                galleryItems = [
+                    { id: 'sample1', imgUrl: 'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', caption: 'Gentle giant encounter', location: 'Volcanoes NP', author: 'Sarah J.', category: 'gorilla', timestamp: Date.now() },
+                    { id: 'sample2', imgUrl: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', caption: 'Majestic elephant herd', location: 'Akagera NP', author: 'Michael', category: 'safari', timestamp: Date.now() },
+                    { id: 'sample3', imgUrl: 'https://images.unsplash.com/photo-1573843989-c9d7ad0f6a9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', caption: 'Sunset on Lake Kivu', location: 'Rubavu', author: 'Emma & David', category: 'nature', timestamp: Date.now() },
+                    { id: 'sample4', imgUrl: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', caption: 'Intore dancers', location: 'Iby’Iwacu Village', author: 'Amina', category: 'culture', timestamp: Date.now() },
+                    { id: 'sample5', imgUrl: 'https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80', caption: 'Chimpanzee tracking', location: 'Nyungwe Forest', author: 'Carlos M.', category: 'gorilla', timestamp: Date.now() }
+                ];
+                saveToLocal();
+            }
+            renderGallery();
+        }
+
+        function saveToLocal() {
+            localStorage.setItem('westernPeaksGallery', JSON.stringify(galleryItems));
+        }
+
+        // Helper to detect category based on caption/location or default
+        function detectCategory(caption, location) {
+            const text = (caption + ' ' + location).toLowerCase();
+            if(text.includes('gorilla') || text.includes('mountain') || text.includes('volcano')) return 'gorilla';
+            if(text.includes('lion') || text.includes('elephant') || text.includes('safari') || text.includes('akagera') || text.includes('zebra')) return 'safari';
+            if(text.includes('lake') || text.includes('kivu') || text.includes('forest') || text.includes('canopy') || text.includes('hiking')) return 'nature';
+            if(text.includes('dance') || text.includes('cultural') || text.includes('village') || text.includes('market')) return 'culture';
+            return 'nature';
+        }
+
+        function addImageToGallery(imgUrl, caption, location, author) {
+            const cat = detectCategory(caption, location);
+            const newId = 'user_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
+            const newItem = {
+                id: newId,
+                imgUrl: imgUrl,
+                caption: caption || 'Amazing Rwanda moment',
+                location: location || 'Rwanda',
+                author: author || 'Traveler',
+                category: cat,
+                timestamp: Date.now()
+            };
+            galleryItems.unshift(newItem); // newest first
+            saveToLocal();
+            renderGallery();
+        }
+
+        function deleteImageById(id) {
+            galleryItems = galleryItems.filter(item => item.id !== id);
+            saveToLocal();
+            renderGallery();
+        }
+
+        // Render gallery with filtering
+        let currentFilter = 'all';
+        function renderGallery() {
+            const grid = document.getElementById('galleryGrid');
+            if(!grid) return;
+            let filtered = [...galleryItems];
+            if(currentFilter !== 'all') {
+                filtered = filtered.filter(item => item.category === currentFilter);
+            }
+            if(filtered.length === 0) {
+                grid.innerHTML = `<div class="empty-state"><i class="fas fa-camera fa-2x"></i><p>No photos yet. Be the first to upload your Rwanda adventure!</p></div>`;
+                return;
+            }
+            grid.innerHTML = filtered.map(item => `
+                <div class="gallery-item-card" data-category="${item.category}" data-id="${item.id}">
+                    <img class="card-img" src="${item.imgUrl}" alt="${escapeHtml(item.caption)}" loading="lazy">
+                    <div class="card-info">
+                        <div class="card-caption">
+                            <span>📷 ${escapeHtml(item.caption.length > 35 ? item.caption.slice(0,32)+'...' : item.caption)}</span>
+                            <span class="delete-badge" data-id="${item.id}" style="cursor:pointer;"><i class="fas fa-trash-alt"></i></span>
+                        </div>
+                        <div class="card-location"><i class="fas fa-map-marker-alt"></i> ${escapeHtml(item.location)}</div>
+                        <div style="font-size:0.7rem; margin-top:4px;">✍️ ${escapeHtml(item.author)}</div>
+                    </div>
+                </div>
+            `).join('');
+
+            // Attach delete events
+            document.querySelectorAll('.delete-badge').forEach(el => {
+                el.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const id = el.getAttribute('data-id');
+                    if(id && confirm('Remove this memory from gallery?')) {
+                        deleteImageById(id);
+                    }
+                });
+            });
+
+            // Attach lightbox click on images
+            document.querySelectorAll('.gallery-item-card').forEach(card => {
+                const img = card.querySelector('.card-img');
+                if(img) {
+                    card.addEventListener('click', (e) => {
+                        if(e.target.classList.contains('delete-badge')) return;
+                        const fullImgSrc = img.src;
+                        const lightbox = document.getElementById('lightboxModal');
+                        const lightboxImg = document.getElementById('lightboxImage');
+                        lightboxImg.src = fullImgSrc;
+                        lightbox.classList.add('active');
+                    });
+                }
+            });
+        }
+
+        function escapeHtml(str) { return str.replace(/[&<>]/g, function(m){if(m==='&') return '&amp;'; if(m==='<') return '&lt;'; if(m==='>') return '&gt;'; return m;}); }
+
+        // Upload handling (image to base64)
+        let selectedFileBase64 = null;
+        const fileInput = document.getElementById('fileInput');
+        const dropZone = document.getElementById('dropZone');
+        const previewContainer = document.getElementById('previewContainer');
+
+        function handleFile(file) {
+            if(!file || !file.type.startsWith('image/')) {
+                alert('Please select a valid image (JPEG, PNG, WEBP)');
+                return;
+            }
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                selectedFileBase64 = e.target.result;
+                previewContainer.innerHTML = `<img src="${selectedFileBase64}" class="preview-img" alt="preview"><span style="font-size:0.8rem;">✅ Ready to publish</span>`;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        dropZone.addEventListener('click', () => fileInput.click());
+        dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.style.background = '#e0f0e8'; });
+        dropZone.addEventListener('dragleave', () => dropZone.style.background = 'var(--primary-soft)');
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.style.background = 'var(--primary-soft)';
+            const file = e.dataTransfer.files[0];
+            if(file) handleFile(file);
+        });
+        fileInput.addEventListener('change', (e) => {
+            if(e.target.files.length) handleFile(e.target.files[0]);
+        });
+
+        document.getElementById('publishBtn').addEventListener('click', () => {
+            if(!selectedFileBase64) {
+                alert('Please select an image first (click or drag)');
+                return;
+            }
+            const caption = document.getElementById('photoCaption').value.trim() || 'Memorable moment in Rwanda';
+            const location = document.getElementById('photoLocation').value.trim() || 'Rwanda';
+            const author = document.getElementById('photoAuthor').value.trim() || 'Anonymous traveler';
+            addImageToGallery(selectedFileBase64, caption, location, author);
+            // reset form
+            selectedFileBase64 = null;
+            previewContainer.innerHTML = '';
+            document.getElementById('photoCaption').value = '';
+            document.getElementById('photoLocation').value = '';
+            document.getElementById('photoAuthor').value = '';
+            fileInput.value = '';
+            alert('🎉 Your photo has been added to the gallery! Inspire others with your Rwanda journey.');
+        });
+
+        // filter buttons
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.getAttribute('data-filter');
+                renderGallery();
+            });
+        });
+
+        // Lightbox close
+        const lightbox = document.getElementById('lightboxModal');
+        lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+
+        // initial load
+        loadGalleryFromStorage();
+    })();
+</script>
+</body>
+</html>
+
+
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title">Traveler Reviews</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p>"The gorilla trekking was life-changing! Western Peaks organized everything perfectly. Highly recommend!"</p><div class="testimonial-author"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah"><div><h4>Sarah Johnson</h4><p>United Kingdom</p></div></div></div>
+                <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p>"Amazing safari experience in Akagera. Saw the Big 5! The team was professional and knowledgeable."</p><div class="testimonial-author"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael"><div><h4>Michael Chen</h4><p>United States</p></div></div></div>
+                <div class="testimonial-card"><div class="testimonial-stars">★★★★★</div><p>"The canopy walk in Nyungwe was breathtaking. Rwanda is truly beautiful and the people are so welcoming."</p><div class="testimonial-author"><img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Anna"><div><h4>Anna Müller</h4><p>Germany</p></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Payment Methods</h2>
+            <div class="payment-grid">
+                <div class="payment-card"><div class="payment-icon"><i class="fas fa-mobile-alt"></i></div><h3>MTN Mobile Money</h3><p>0783584628</p></div>
+                <div class="payment-card"><div class="payment-icon"><i class="fas fa-sim-card"></i></div><h3>Airtel Money</h3><p>0729012486</p></div>
+                <div class="payment-card"><div class="payment-icon"><i class="fab fa-cc-visa"></i></div><h3>Visa / Mastercard</h3><p>International Cards</p></div>
+                <div class="payment-card"><div class="payment-icon"><i class="fab fa-paypal"></i></div><h3>PayPal</h3><p>Secure Online Payment</p></div>
+                <div class="payment-card"><div class="payment-icon"><i class="fas fa-university"></i></div><h3>Bank Transfer</h3><p>Bank of Kigali</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Plan Your Rwanda Adventure</h2>
+            <div class="contact-grid">
+                <div class="contact-info"><h3>Contact Information</h3><div class="contact-item"><i class="fas fa-phone"></i><div><strong>Phone/WhatsApp</strong><br><a href="tel:+250783584628" style="color:inherit;">0783584628</a></div></div><div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><br><a href="mailto:meshaciradukunda@gmail.com" style="color:inherit;">meshaciradukunda@gmail.com</a></div></div><div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><strong>Address</strong><br>Rubavu, Rwanda</div></div><div class="contact-item"><i class="fas fa-clock"></i><div><strong>Office Hours</strong><br>24/7 Customer Support</div></div></div>
+                <div class="contact-form"><h3>Send Booking Request</h3><form id="bookingForm"><input type="text" id="fullName" placeholder="Full Name *" required><input type="email" id="email" placeholder="Email *" required><input type="tel" id="phone" placeholder="Phone Number *" required><select id="tourSelect"><option value="">Select Tour Package</option><option value="Gorilla Trekking">🦍 Gorilla Trekking - $</option><option value="Volcano Hiking">⛰️ Volcano Hiking - $</option><option value="Chimpanzee Tracking">🐒 Chimpanzee Tracking - $</option><option value="Akagera Safari">🦁 Akagera Safari - $</option><option value="Lake Kivu Tour">🌊 Lake Kivu Tour - $</option><option value="Cultural Tour">🎭 Cultural Tour - $</option><option value="Canopy Walk">🌉 Canopy Walk - $</option><option value="Kigali Tour">🏙️ Kigali Tour - $</option></select><input type="date" id="date" placeholder="Travel Date"><input type="number" id="guests" placeholder="Number of Guests" min="1"><textarea id="message" placeholder="Special Requests / Hotel Booking Needs" rows="3"></textarea><button type="submit" class="btn btn-primary btn-block">Send Request → WhatsApp</button></form></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><div class="footer-logo"><span style="font-size:40px;">🏔️</span><h3 style="display:inline; margin-left:20px;">Western Peaks Tours</h3></div><p>YOU CAN FOLLOW US  ON OUR SOCIAL MEDIA .</p><div class="social-links"><a href="https://web.facebook.com/profile.php?id=61587530133304"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/westernpeakstour/"><i class="fab fa-instagram"></i></a><a href="https://x.com/westernpeaksto"><i class="fab fa-twitter"></i><a href="https://youtube.com/@westernpeakstour?si=ItMW7FQRaQgWo4sk"><i class="fab fa-youtube"></i></a><a href="https://www.tiktok.com/@westernpeakstour"><i class="fab fa-tiktok"></i></a></div></div>
+                <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="#home">Home</a></li><li><a href="#destinations">Destinations</a></li><li><a href="#tours">Tours</a></li><li><a href="#activities">Activities</a></li><li><a href="#contact">Contact</a></li></ul></div>
+                <div><h4>Destinations</h4><ul class="footer-links"><li>Volcanoes NP</li><li>Nyungwe Forest</li><li>Akagera Park</li><li>Lake Kivu</li><li>Kigali City</li></ul></div>
+                <div><h4>Contact Info</h4><ul class="footer-links"><li>📞 0783584628</li><li>📧 meshaciradukunda@gmail.com</li><li>📍 Rubavu, Rwanda</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2025 Western Peaks Tours - Complete Rwanda Travel | All Rights Reserved</p><p style="margin-top:10px; font-size:15px;">Gorilla Trekking | Safari | Hiking | Culture | Hotels</p></div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/250783584628" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <div id="imageModal" class="modal"><img id="modalImage" src=""></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu
+            const menuToggle = document.getElementById('menuToggle');
+            const navMenu = document.getElementById('navMenu');
+            if(menuToggle) menuToggle.onclick = () => navMenu.classList.toggle('active');
+            
+            // Gallery tabs
+            const tabs = document.querySelectorAll('.gallery-tab');
+            const travelGal = document.getElementById('travelGallery');
+            const hotelGal = document.getElementById('hotelGallery');
+            const foodGal = document.getElementById('foodGallery');
+            tabs.forEach(tab => {
+                tab.onclick = function() {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    const type = this.getAttribute('data-gallery');
+                    if(travelGal) travelGal.style.display = type === 'travel' ? 'grid' : 'none';
+                    if(hotelGal) hotelGal.style.display = type === 'hotel' ? 'grid' : 'none';
+                    if(foodGal) foodGal.style.display = type === 'food' ? 'grid' : 'none';
+                };
+            });
+            
+            // Modal for images
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            document.querySelectorAll('.gallery-item').forEach(item => {
+                item.onclick = function() {
+                    const img = this.querySelector('img');
+                    if(img) { modalImg.src = img.src; modal.classList.add('active'); }
+                };
+            });
+            if(modal) modal.onclick = () => modal.classList.remove('active');
+            
+            // Book now buttons
+            document.querySelectorAll('.book-now').forEach(btn => {
+                btn.onclick = function() {
+                    const tour = this.getAttribute('data-tour');
+                    const price = this.getAttribute('data-price');
+                    const select = document.getElementById('tourSelect');
+                    if(select && tour) {
+                        for(let i=0; i<select.options.length; i++) {
+                            if(select.options[i].value === tour || select.options[i].text.includes(tour)) {
+                                select.selectedIndex = i; break;
+                            }
+                        }
+                    }
+                    document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+                };
+            });
+            
+            // Form submission to WhatsApp
+            const form = document.getElementById('bookingForm');
+            if(form) {
+                form.onsubmit = function(e) {
+                    e.preventDefault();
+                    const name = document.getElementById('fullName')?.value || '';
+                    const email = document.getElementById('email')?.value || '';
+                    const phone = document.getElementById('phone')?.value || '';
+                    const tour = document.getElementById('tourSelect')?.value || '';
+                    const date = document.getElementById('date')?.value || '';
+                    const guests = document.getElementById('guests')?.value || '1';
+                    const msg = document.getElementById('message')?.value || '';
+                    if(!name || !email || !phone) { alert('Please fill Name, Email, and Phone'); return; }
+                    const text = `*NEW BOOKING REQUEST*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Tour:* ${tour}%0A*Date:* ${date}%0A*Guests:* ${guests}%0A*Message:* ${msg}`;
+                    window.open(`https://wa.me/250783584628?text=${text}`, '_blank');
+                    alert('thank for contact us  as soon as you get response from our team name.');
+                    form.reset();
+                };
+            }
+            
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.onscroll = () => { if(window.scrollY > 100) header.classList.add('scrolled'); else header.classList.remove('scrolled'); };
+        });
+    </script>
+</body>
+</html>
